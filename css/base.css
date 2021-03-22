@@ -1,0 +1,29 @@
+:root {
+    --light-gray-color: #d6d6d6;
+    --gray-color: #333533;
+    --dark-gray-color: #202020;
+    --light-yellow-color: #ffee32;
+    --yellow-color: #ffd100;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page main {
+    min-height: 300px;
+    flex-grow: 1;
+}
