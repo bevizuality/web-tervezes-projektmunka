@@ -1,0 +1,112 @@
+header {
+    background: var(--light-gray-color);
+    background: linear-gradient(to right, var(--light-gray-color) 0%, var(--dark-gray-color) 100%);
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0.5rem 1.2rem;
+}
+
+header .navbar-brand {
+    display: inline-block;
+    width: 240px;
+    height: 80px;
+    background-image: url("../images/logo.png");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header li.active a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+header .mobile-menu {
+    display: none;
+}
+
+header .menu {
+    margin: 0;
+    padding: 0;
+}
+
+header .menu li {
+    display: inline-block;
+    margin: 0 0.6rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header .menu li a {
+    color: var(--light-yellow-color);
+}
+
+header .menu li a:is(:hover, :active, :focus) {
+    color: var(--yellow-color);
+}
+
+@media screen and (max-width: 750px) {
+    header #main-menu {
+        position: relative;
+        display: inline-block;
+    }
+
+    header .mobile-menu {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-image: url("../images/menu-icon-yellow.png");
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    header #main-menu ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-radius: 4px;
+        background-color: var(--light-gray-color);
+        box-shadow: 0 4px 9px rgba(44, 44, 44, 0.37);
+        z-index: 1;
+    }
+
+    header #main-menu ul a {
+        display: block;
+        padding: 0.5rem 1rem;
+        min-width: 160px;
+        background-color: transparent;
+        color: var(--dark-gray-color);
+        transition: all 200ms ease-in-out;
+    }
+
+    header #main-menu li.active a {
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    header #main-menu ul li {
+        margin: 0;
+    }
+
+    header #main-menu ul li:hover a {
+        background-color: var(--light-yellow-color);
+    }
+
+    header #main-menu:is(:hover, :active, :focus) ul {
+        display: block;
+    }
+}
