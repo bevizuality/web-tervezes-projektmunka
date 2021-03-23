@@ -27,3 +27,13 @@ body {
     min-height: 300px;
     flex-grow: 1;
 }
+
+.currency {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/currency.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

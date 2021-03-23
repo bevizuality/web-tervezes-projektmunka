@@ -1,0 +1,95 @@
+.slider-wrapper .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 400px;
+    background-image: url(../images/slider.jpg);
+    background-position: 0 0;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider {
+    0% {background-position: 0 0;}
+    20% {background-position: 0 0;}
+    25% {background-position: -1920px 0;}
+    45% {background-position: -1920px 0;}
+    50% {background-position: -1920px -400px;}
+    70% {background-position: -1920px -400px;}
+    75% {background-position: 0 -400px;}
+    95% {background-position: 0 -400px;}
+    100% {background-position: 0 0;}
+}
+
+.slider-wrapper .slider .slider-text {
+    background: rgba(51, 53, 51, 0.25);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.slider-text h1 {
+    margin-top: 0;
+}
+
+.slider-text button {
+    padding: 1em 2em;
+    background-color: var(--light-yellow-color);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+}
+
+.slider-text button a {
+    font-size: 1rem;
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.services-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+    background-image: linear-gradient(165deg, rgba(214, 214, 214, 0.6) 0%, rgba(255, 238, 50, 0.7) 20%, rgba(255, 209, 0, 0.8) 100%), url(../images/geometry-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.services-prices table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.services-prices table caption {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.services-prices table,
+.services-prices table th,
+.services-prices table td {
+    border: 2px solid var(--dark-gray-color);
+}
+
+.services-prices table th,
+.services-prices table td {
+    padding: 1rem;
+}
