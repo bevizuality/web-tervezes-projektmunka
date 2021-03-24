@@ -1,0 +1,70 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+.content {
+    width: 78%;
+    display: inline-block;
+}
+
+aside {
+    float: right;
+    width: 20%;
+}
+
+aside h6 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    background-color: var(--dark-gray-color);
+    padding: 0.6rem 1rem;
+    color: white;
+}
+aside ul {
+    border: 1px solid var(--dark-gray-color);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside li a {
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem;
+}
+
+aside li a.active {
+    background-color: var(--light-gray-color);
+}
+
+aside li a:hover {
+    background-color: var(--light-gray-color);
+    transition: all 150ms ease-in-out;
+    transform: scale(1.05);
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+}
+
+.post-wrapper {
+    margin: 2rem 0;
+}
+
+.post-wrapper a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.3rem;
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    color: var(--dark-gray-color);
+    text-decoration: none;
+}

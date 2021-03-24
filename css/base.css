@@ -6,6 +6,10 @@
     --yellow-color: #ffd100;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -26,6 +30,7 @@ body {
 .page main {
     min-height: 300px;
     flex-grow: 1;
+    margin-top: 96px;
 }
 
 .currency {
@@ -36,4 +41,18 @@ body {
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+blockquote {
+    margin: 0;
+}
+
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+    }
+    img {
+        display: none !important;
+    }
 }
