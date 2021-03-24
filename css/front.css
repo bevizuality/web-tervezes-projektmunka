@@ -93,3 +93,72 @@
 .services-prices table td {
     padding: 1rem;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-image: linear-gradient(to right, #333533 0, #202020 100%);
+    color: white;
+}
+
+.about img {
+    max-width: 40%;
+    width: 100%;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.about a {
+    display: inline-block;
+    padding: 0.5rem 1.3rem;
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    color: var(--dark-gray-color);
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.latest-blog-posts {
+    padding: 2rem;
+}
+
+.latest-blog-posts .posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.latest-blog-posts .posts img {
+    width: 100%;
+    height: auto;
+}
+
+.latest-blog-posts .post-wrapper {
+    flex: 30%;
+    max-width: 30%;
+}
+
+.latest-blog-posts .post-wrapper h5 {
+    height: 1.2rem;
+    font-weight: bold;
+}
+
+.latest-blog-posts .post-wrapper a {
+    padding: 0.5rem 1.3rem;
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    color: var(--dark-gray-color);
+    text-decoration: none;
+}
+
+.latest-blog-posts .post-wrapper blockquote {
+    margin: 0;
+    padding-bottom: 1rem;
+}
