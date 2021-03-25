@@ -1,0 +1,125 @@
+.title-wrapper {
+    background-image: url("../images/screen.jpg");
+    background-size: 100%;
+    background-position: 50%;
+    background-color: var(--light-yellow-color);
+  }
+  
+  .title {
+    backdrop-filter: blur(6px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-wrapper .title {
+    height: 400px;
+  }
+  
+  .title h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: white ;
+  }
+
+.history{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-yellow-color);
+}
+
+.history h2 {
+    margin: 60px auto 40px;
+}
+
+.history p {
+    width: 65%;
+    margin:0 auto 60px;
+    font-size: 1.5 rem;
+    line-height: 1.5;
+}
+
+
+.team {
+    background-color: var(--dark-gray-color);
+    text-align: center;
+}
+
+.team h2 {
+    margin: 0;
+    color: var(--light-gray-color);
+    padding-top: 50px;
+}
+
+.teammates{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin:  50px 17% 0;
+    padding-bottom: 50px;
+}
+
+.teammate {
+    background-color: var(--light-gray-color);
+    border-radius: 10%;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+}
+
+.teammate-img {
+    border-radius: 100%;
+    height: 200px;
+
+
+}
+
+.quality {
+    background-color: var(--light-yellow-color);
+    text-align: center;
+}
+
+.qualities {
+    background-color: var(--light-yellow-color);
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 8%;
+    margin: auto 6%;
+}
+
+.quality h2{
+    margin: 0;
+    padding: 60px;
+}
+
+.quality-item {
+    background-color: var(--light-gray-color);
+    height: 250px;
+    width: 430px;
+    margin: 20px 5px;
+    border-radius: 10%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.quality-item img {
+    height: 110px;
+}
+
+.quality-item h3 {
+    margin: 45px auto;
+}
+
+.quality-item-content {
+    transition: transform 0.5s ease-in-out;
+}
+
+.quality-item:hover .quality-item-content{
+    transform: translateY(-150px);
+}
