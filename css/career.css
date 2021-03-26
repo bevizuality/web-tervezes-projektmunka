@@ -1,0 +1,68 @@
+.title-wrapper {
+    background-image: url("../images/screen.jpg");
+    background-size: 100%;
+    background-position: 50%;
+  }
+  
+.title {
+backdrop-filter: blur(6px);
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.title-wrapper .title {
+height: 400px;
+}
+
+.title h1 {
+margin: 0;
+font-size: 4rem;
+color: white ;
+}
+
+.form-wrapper {
+background-color: var(--light-yellow-color);
+padding: 80px 15%;   
+}
+
+.form-wrapper form legend{
+    font-size: 1.5rem;
+}
+
+.form-wrapper form fieldset {
+    background-color: var(--light-gray-color);
+    margin-bottom: 40px;
+    border-radius: 30px;
+    padding: 30px 40px;
+}
+
+.form-wrapper form input {
+    margin: 20px auto;
+}
+
+.form-wrapper form p{
+    display: inline;
+}
+
+.form-wrapper form select {
+    margin-bottom: 20px;
+}
+
+input[type=submit]{
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-gray-color);
+    padding: 1em 2em;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type=checkbox]{
+    margin: 40px;
+}
