@@ -102,7 +102,7 @@
     background-color: var(--light-gray-color);
     height: 250px;
     width: 430px;
-    margin: 20px 5px;
+    margin: 5px 20px 60px;
     border-radius: 10%;
     padding: 30px;
     overflow: hidden;
