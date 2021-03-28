@@ -1,7 +1,7 @@
 footer{
     display: flex;
     justify-content: center;
-    background-color: var(--dark-gray-color);
+    background-color: var(--light-gray-color);
     padding: 40px;
 }
 
