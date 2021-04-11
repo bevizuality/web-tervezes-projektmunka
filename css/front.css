@@ -50,13 +50,6 @@
     border-radius: 1rem;
 }
 
-.slider-text button a {
-    font-size: 1rem;
-    color: var(--dark-gray-color);
-    text-decoration: none;
-    font-weight: 600;
-}
-
 .services-prices {
     display: flex;
     flex-direction: row;
@@ -111,7 +104,7 @@
     margin-right: 2rem;
 }
 
-.about a {
+.about a, .slider a {
     display: inline-block;
     padding: 0.5rem 1.3rem;
     background-color: var(--yellow-color);

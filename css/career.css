@@ -50,7 +50,7 @@ padding: 80px 15%;
     margin-bottom: 20px;
 }
 
-input[type=submit]{
+input[type=submit], [type=reset]{
     display: flex;
     justify-content: center;
     background-color: var(--light-gray-color);

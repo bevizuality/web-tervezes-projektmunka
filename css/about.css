@@ -55,6 +55,11 @@
     margin-right: 15%;
 }
 
+#map {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
 
 .team {
     background-color: var(--dark-gray-color);

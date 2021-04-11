@@ -73,7 +73,7 @@
                             <label for="other">Egyéb</label>
                             <br>
                             <label for="mobile">Telefonszám:</label>
-                            <input type="tel" id="tel" name="tel" placeholder="06301234567" required>
+                            <input type="tel" id="mobile" name="tel" placeholder="06301234567" required>
                             <br>
                             <label for="email">Email cím:</label>
                             <input type="email"  id="email" name="email" required>
@@ -82,7 +82,7 @@
                         <legend>Szakmai tapasztalat</legend>
                             <label for="edu">Legmagasabb iskolai végzettség:</label>
                             <select name="edu" id="edu" required>
-                                <option value="choose" disabled selected>Válassz:</option>
+                                <option value="" disabled selected>Válassz:</option>
                                 <option value="8osztaly">Befejezett 8 osztály</option>
                                 <option value="szkozep">Szakközépiskolai érettségi</option>
                                 <option value="gim">Gimnáziumi érettségi</option>
@@ -108,6 +108,7 @@
                             <input type="file" id="file" name="fajl" required>
                     </fieldset>
                     <input type="hidden" id="application_id" name="jeletnkezes_id">
+                    <input type="reset" value="Töröl">
                     <input type="submit" value="Elküldöm a jelentkezésemet">
                 </form>
             </section>
