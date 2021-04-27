@@ -25,21 +25,24 @@
     <div class="page">
         <header>
             <nav>
-                <a class="navbar-brand" href="../index.html"></a>
+                <a class="navbar-brand" href="../index.php"></a>
                 <div id="main-menu">
                     <div class="mobile-menu"></div>
                     <ul class="menu">
                         <li>
-                            <a href="../index.html">Kezdőlap</a>
+                            <a href="../index.php">Kezdőlap</a>
                         </li>
                         <li>
-                            <a href="./about.html">Rólunk</a>
+                            <a href="about.php">Rólunk</a>
                         </li>
                         <li class="active">
-                            <a href="./blog-posts.html">Blog</a>
+                            <a href="blog-posts.php">Blog</a>
                         </li>
                         <li>
-                            <a href="./career.html">Karrier</a>
+                            <a href="career.php">Karrier</a>
+                        </li>
+                        <li>
+                            <a href="log-in.php">Bejelentkezés</a>
                         </li>
                     </ul>
                 </div>
@@ -61,11 +64,7 @@
                 </article>
             </div>
         </main>
-        <footer>
-            <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="facebook" /></a>
-            <a href="https://www.instagram.com"><img src="../images/instagram.png" alt="instagram" /></a>
-            <a href="https://www.twitter.com"><img src="../images/twitter.png  " alt="twitter" /></a>
-        </footer>       
+        <?php include "footer.php" ?>
     </div>
 </body>
 </html>

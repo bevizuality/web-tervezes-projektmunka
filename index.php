@@ -25,21 +25,24 @@
     <div class="page">
         <header>
             <nav>
-                <a class="navbar-brand" href="./index.html"></a>
+                <a class="navbar-brand" href="index.php"></a>
                 <div id="main-menu">
                     <div class="mobile-menu"></div>
                     <ul class="menu">
                         <li class="active">
-                            <a href="./index.html">Kezdőlap</a>
+                            <a href="index.php">Kezdőlap</a>
                         </li>
                         <li>
-                            <a href="./pages/about.html">Rólunk</a>
+                            <a href="pages/about.php">Rólunk</a>
                         </li>
                         <li>
-                            <a href="./pages/blog-posts.html">Blog</a>
+                            <a href="pages/blog-posts.php">Blog</a>
                         </li>
                         <li>
-                            <a href="./pages/career.html">Karrier</a>
+                            <a href="pages/career.php">Karrier</a>
+                        </li>
+                        <li>
+                            <a href="pages/log-in.php">Bejelentkezés</a>
                         </li>
                     </ul>
                 </div>
@@ -97,7 +100,7 @@
                 <div class="text">
                     <h3>Néhány gondolat rólunk</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, laboriosam! Molestiae nihil ratione est ad, reprehenderit vero excepturi! Nam ullam quos animi nisi tempore obcaecati eligendi ab, alias sint, error nulla temporibus quidem placeat officiis aliquid saepe adipisci eaque voluptate voluptatem, tenetur fuga commodi expedita.</p>
-                    <a href="./pages/about.html">Bővebben</a>
+                    <a href="pages/about.php">Bővebben</a>
                 </div>
             </section>
             <section class="latest-blog-posts">
@@ -109,7 +112,7 @@
                             <h5>Mi az a UX Design és mit kell tudni róla?</h5>
                             <p>A UX Design olyan termékek létrehozásának folyamata, amelyek a hasznosságon túl személyes élményt is nyújtanak használóiknak. Az UX Design-ba beletartozik a termék ...</p>
                         </blockquote>
-                        <a href="./pages/blog-post.html">Tovább</a>
+                        <a href="pages/blog-post.php">Tovább</a>
                     </div>
                     <div class="post-wrapper">
                         <blockquote cite="https://www.usernet.hu/">
@@ -117,7 +120,7 @@
                             <h5>Webshop UX audit a magasabb konverzióért és a több bevételért</h5>
                             <p>Az UX audit egy diagnosztikai eljárás, amely a weboldalak és webshopok megjelenésének és működésének hibáit segít felderíteni ezzel biztosítva a magasabb konverzió ...</p>
                         </blockquote>
-                        <a href="./pages/blog-post.html">Tovább</a>
+                        <a href="pages/blog-post.php">Tovább</a>
                     </div>
                     <div class="post-wrapper">
                         <blockquote cite="https://www.usernet.hu/">
@@ -125,7 +128,7 @@
                             <h5>Weboldal UX audit a magasabb konverziók érdekében</h5>
                             <p>Nem vagy elégedett weboldalad teljesítményével? Úgy érzed valamin változtatni kellene, de nem tudod pontosan min? Az UX auditot neked találták ki. Rávilágít weboldalad ...</p>
                         </blockquote>
-                        <a href="./pages/blog-post.html">Tovább</a>
+                        <a href="pages/blog-post.php">Tovább</a>
                     </div>
                 </div>
             </section>
@@ -134,7 +137,7 @@
             <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="facebook" /></a>
             <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="instagram" /></a>
             <a href="https://www.twitter.com"><img src="./images/twitter.png  " alt="twitter" /></a>
-        </footer>      
+        </footer>
     </div>
 </body>
 </html>

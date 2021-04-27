@@ -1,0 +1,30 @@
+main {
+    background-color: var(--light-yellow-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.box {
+    background-color: var(--light-gray-color);
+    width: 400px;
+    padding: 30px;
+}
+
+label, input{
+    margin: auto;
+}
+
+h1 {
+    position: relative;
+    left: 50px;
+    bottom: 10px ;
+}
+
+label, input {
+    margin:5px;
+}
+
+p {
+    margin: 30px;
+}

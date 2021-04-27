@@ -25,21 +25,24 @@
     <div class="page">
         <header>
             <nav>
-                <a class="navbar-brand" href="../index.html"></a>
+                <a class="navbar-brand" href="../index.php"></a>
                 <div id="main-menu">
                     <div class="mobile-menu"></div>
                     <ul class="menu">
                         <li>
-                            <a href="../index.html">Kezdőlap</a>
+                            <a href="../index.php">Kezdőlap</a>
                         </li>
                         <li>
-                            <a href="./about.html">Rólunk</a>
+                            <a href="about.php">Rólunk</a>
                         </li>
                         <li class="active">
-                            <a href="./blog-posts.html">Blog</a>
+                            <a href="blog-posts.php">Blog</a>
                         </li>
                         <li>
-                            <a href="./career.html">Karrier</a>
+                            <a href="career.php">Karrier</a>
+                        </li>
+                        <li>
+                            <a href="log-in.php">Bejelentkezés</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +57,7 @@
                             <h5>Mi az a UX Design és mit kell tudni róla?</h5>
                             <p>A UX Design olyan termékek létrehozásának folyamata, amelyek a hasznosságon túl személyes élményt is nyújtanak használóiknak. Az UX Design-ba beletartozik a termék ...</p>
                         </blockquote>
-                        <a href="./blog-post.html">Tovább</a>
+                        <a href="blog-post.php">Tovább</a>
                     </div>
                     <div class="post-wrapper">
                         <blockquote cite="https://www.usernet.hu/">
@@ -62,7 +65,7 @@
                             <h5>Webshop UX audit a magasabb konverzióért és a több bevételért</h5>
                             <p>Az UX audit egy diagnosztikai eljárás, amely a weboldalak és webshopok megjelenésének és működésének hibáit segít felderíteni ezzel biztosítva a magasabb konverzió ...</p>
                         </blockquote>
-                        <a href="./blog-post.html">Tovább</a>
+                        <a href="blog-post.php">Tovább</a>
                     </div>
                     <div class="post-wrapper">
                         <blockquote cite="https://www.usernet.hu/">
@@ -70,17 +73,17 @@
                             <h5>Weboldal UX audit a magasabb konverziók érdekében</h5>
                             <p>Nem vagy elégedett weboldalad teljesítményével? Úgy érzed valamin változtatni kellene, de nem tudod pontosan min? Az UX auditot neked találták ki. Rávilágít weboldalad ...</p>
                         </blockquote>
-                        <a href="./blog-post.html">Tovább</a>
+                        <a href="blog-post.php">Tovább</a>
                     </div>
                 </div>
                 <aside>
                     <h6>Kategóriák</h6>
                     <ul>
-                        <li><a class="active" href="./blog-posts.html">Webdesign</a></li>
-                        <li><a href="./blog-posts.html">Webfejlesztés</a></li>
-                        <li><a href="./blog-posts.html">SEO</a></li>
-                        <li><a href="./blog-posts.html">Tanfolyamok</a></li>
-                        <li><a href="./blog-posts.html">Webáruházak</a></li>
+                        <li><a class="active" href="blog-posts.php">Webdesign</a></li>
+                        <li><a href="blog-posts.php">Webfejlesztés</a></li>
+                        <li><a href="blog-posts.php">SEO</a></li>
+                        <li><a href="blog-posts.php">Tanfolyamok</a></li>
+                        <li><a href="blog-posts.php">Webáruházak</a></li>
                     </ul>
                     <div class="ad-banner">
                         <p>Hirdetés</p>
@@ -89,11 +92,7 @@
                 </aside>
             </div>
         </main>
-        <footer>
-            <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="facebook" /></a>
-            <a href="https://www.instagram.com"><img src="../images/instagram.png" alt="instagram" /></a>
-            <a href="https://www.twitter.com"><img src="../images/twitter.png  " alt="twitter" /></a>
-        </footer>      
+        <?php include "footer.php" ?>
     </div>
 </body>
 </html>
