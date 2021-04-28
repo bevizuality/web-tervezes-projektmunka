@@ -38,8 +38,13 @@ if(isset($_POST["reg"])){
             } else {
                 die("<strong>HIBA: </strong> Nem megfelelő a kiterjesztése a képnek! <a href='career.php'>Vissza a regisztrációra</a>");
             }
+
         }
-        $uj= new User($_POST["fnev"], $_POST["jelszo"], $_POST["nev"], $_POST["szuldatum"], $_POST["nem"], $_POST["tel"], $_POST["email"], $_POST["edu"], $_POST["technologiak"], $_POST["fnev"], $_POST["fnev"]. "." . $kepkiterjesztes);
+        $datum = new DateTime();
+        $datum-> setTimezone(new DateTimeZone("Europe/Budapest"));
+        $jelentkezes = $datum->format("Y-n-d");
+        $_POST["datum"] = $jelentkezes;
+        $uj= new User($_POST["fnev"], $_POST["jelszo"], $_POST["nev"], $_POST["szuldatum"], $_POST["nem"], $_POST["tel"], $_POST["email"], $_POST["edu"], $_POST["technologiak"], $_POST["fnev"], $_POST["fnev"]. "." . $kepkiterjesztes, $_POST["datum"]);
         array_push($_SESSION["regisztraltFelhasznalok"], $uj);
         $uj->kiir();
         $uzenet.= "Sikeres regisztráció";
@@ -86,12 +91,24 @@ if(isset($_POST["reg"])){
                         <li>
                             <a href="blog-posts.php">Blog</a>
                         </li>
-                        <li class="active">
-                            <a href="career.php">Karrier</a>
-                        </li>
-                        <li>
-                            <a href="log-in.php">Bejelentkezés</a>
-                        </li>
+                        <?php
+                            if(!isset($_SESSION["user"])){
+                                echo '
+                                <li class="active">
+                                    <a href="career.php">Karrier</a>
+                                </li>
+                                <li>
+                                    <a href="log-in.php">Bejelentkezés</a>
+                                </li>
+                                ';
+                            } else {
+                                echo '
+                                <li>
+                                    <a href="log-in.php">Profil</a>
+                                </li>
+                                ';
+                            }
+                        ?>
                     </ul>
                 </div>
             </nav>
@@ -140,6 +157,7 @@ if(isset($_POST["reg"])){
                             <br>
                             <label for="email">Email cím:</label>
                             <input type="email"  id="email" name="email" required>
+                            <input type="date" name="datum" hidden >
                     </fieldset>
                     <fieldset>
                         <legend>Szakmai tapasztalat</legend>

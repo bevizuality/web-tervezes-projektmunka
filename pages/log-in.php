@@ -68,12 +68,24 @@ if (isset($_POST["ki"])){
                         <li>
                             <a href="blog-posts.php">Blog</a>
                         </li>
-                        <li>
-                            <a href="career.php">Karrier</a>
-                        </li>
-                        <li class="active">
-                            <a href="log-in.php">Bejelentkezés</a>
-                        </li>
+                        <?php
+                        if(!isset($_SESSION["user"])){
+                            echo '
+                                <li>
+                                    <a href="career.php">Karrier</a>
+                                </li>
+                                <li class="active">
+                                    <a href="log-in.php">Bejelentkezés</a>
+                                </li>
+                                ';
+                        } else {
+                            echo '
+                                <li class="active">
+                                    <a href="log-in.php">Profil</a>
+                                </li>
+                                ';
+                        }
+                        ?>
                     </ul>
                 </div>
             </nav>
@@ -108,6 +120,7 @@ if (isset($_POST["ki"])){
                             <p>Email: '.$_SESSION["user"]->getEmail(). ' </p>
                             <p>Legmagasabb iskolai végzettség: '.$_SESSION["user"]->getEdu(). ' </p>
                             <p>Ismert technológiák: '.$_SESSION["user"]->getTechnologiak(). ' </p>
+                            <p>Jelentkezés dátuma: '.$_SESSION["user"]->getJelentkezesDatuma().'</p>
                             
                             <form id="kijelentkezes" action="log-in.php" method="post" enctype="multipart/form-data">
                             <input type="submit" value="kijelentkezes" name="ki">

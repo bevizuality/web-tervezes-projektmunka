@@ -14,6 +14,7 @@ class User
     private $technologiak;
     private $fajl;
     private $kep;
+    private $jelentkezes_datuma;
 
     /**
      * User constructor.
@@ -28,8 +29,9 @@ class User
      * @param $technologiak
      * @param $fajl
      * @param $kep
+     * @param $jelentkezes_datuma
      */
-    public function __construct($fnev, $jelszo, $nev, $szuldatum, $nem, $tel, $email, $edu, $technologiak, $fajl, $kep)
+    public function __construct($fnev, $jelszo, $nev, $szuldatum, $nem, $tel, $email, $edu, $technologiak, $fajl, $kep, $jelentkezes_datuma)
     {
         $this->fnev = $fnev;
         $this->jelszo = $jelszo;
@@ -42,6 +44,7 @@ class User
         $this->technologiak = $technologiak;
         $this->fajl = $fajl;
         $this->kep = $kep;
+        $this->jelentkezes_datuma = $jelentkezes_datuma;
     }
 
     /**
@@ -220,6 +223,38 @@ class User
         $this->kep = $kep;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getJelentkezesDatuma()
+    {
+        return $this->jelentkezes_datuma;
+    }
+
+    /**
+     * @param mixed $jelentkezes_datuma
+     */
+    public function setJelentkezesDatuma($jelentkezes_datuma)
+    {
+        $this->jelentkezes_datuma = $jelentkezes_datuma;
+    }
+
+    /**
+     * User constructor.
+     * @param $fnev
+     * @param $jelszo
+     * @param $nev
+     * @param $szuldatum
+     * @param $nem
+     * @param $tel
+     * @param $email
+     * @param $edu
+     * @param $technologiak
+     * @param $fajl
+     * @param $kep
+     */
+
+
 
     public function kiir(){
         $user = [
@@ -234,6 +269,7 @@ class User
             "technologiak" => $this->technologiak,
             "fajl" => $this->fajl,
             "kep" => $this->kep,
+            "jelentkezes_datuma" => $this->jelentkezes_datuma
         ];
         $file = fopen("users.txt", "a");
         fwrite($file, serialize($user) . "\n");
