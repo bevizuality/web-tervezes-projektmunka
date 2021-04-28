@@ -91,24 +91,12 @@ if(isset($_POST["reg"])){
                         <li>
                             <a href="blog-posts.php">Blog</a>
                         </li>
-                        <?php
-                            if(!isset($_SESSION["user"])){
-                                echo '
-                                <li class="active">
-                                    <a href="career.php">Karrier</a>
-                                </li>
-                                <li>
-                                    <a href="log-in.php">Bejelentkezés</a>
-                                </li>
-                                ';
-                            } else {
-                                echo '
-                                <li>
-                                    <a href="log-in.php">Profil</a>
-                                </li>
-                                ';
-                            }
-                        ?>
+                        <li class="active">
+                            <a href="career.php">Karrier</a>
+                        </li>
+                        <li>
+                            <a href="log-in.php">Bejelentkezés</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

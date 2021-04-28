@@ -1,7 +1,3 @@
-<?php
-include_once "felhasznalok.php";
-?>
-
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -36,30 +32,18 @@ include_once "felhasznalok.php";
                         <li>
                             <a href="../index.php">Kezdőlap</a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="about.php">Rólunk</a>
                         </li>
                         <li class="active">
                             <a href="blog-posts.php">Blog</a>
                         </li>
-                        <?php
-                        if(!isset($_SESSION["user"])){
-                            echo '
-                                <li>
-                                    <a href="career.php">Karrier</a>
-                                </li>
-                                <li>
-                                    <a href="log-in.php">Bejelentkezés</a>
-                                </li>
-                                ';
-                        } else {
-                            echo '
-                                <li>
-                                    <a href="log-in.php">Profil</a>
-                                </li>
-                                ';
-                        }
-                        ?>
+                        <li>
+                            <a href="career.php">Karrier</a>
+                        </li>
+                        <li>
+                            <a href="log-in.php">Bejelentkezés</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
