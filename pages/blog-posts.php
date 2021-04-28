@@ -32,7 +32,7 @@
                         <li>
                             <a href="../index.php">Kezdőlap</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="about.php">Rólunk</a>
                         </li>
                         <li class="active">
