@@ -174,9 +174,6 @@ if(isset($_POST["reg"])){
                             <input type="checkbox" id="ang_mat" name="technologiak" value="ang_mat">
                             <label for="ang_mat">Angular material</label>
                             <br>
-                            <label for="file">Önéletrajz csatolása:</label>
-                            <input type="file" id="file" name="fajl" >
-                            <br>
                             <label for="kep">Profilkép csatolása:</label>
                             <input type="file" id="kep" name="kep" accept="image/*" >
                     </fieldset>
