@@ -7,10 +7,10 @@ if(isset($_POST["reg"])){
     if(!isset($_POST["fnev"]) || !isset($_POST["jelszo"]) || !isset($_POST["jelszoujra"]) || !isset($_POST["nev"]) || !isset($_POST["szuldatum"]) || !isset($_POST["nem"]) || !isset($_POST["tel"]) || !isset($_POST["email"]) || !isset($_POST["edu"]) || !isset($_POST["technologiak"]) ){
         die("<strong>HIBA: </strong> Nincs minden kötelező mező kitöltve <a href='career.php'>Vissza a regisztrációra</a>");
     }
-    if(strlen($_POST["fnev"] < 5)){
+    if(strlen($_POST["fnev"]) < 5){
         die("<strong>HIBA: </strong> A felhasználónévnak legalább 5 karakter hosszzúnak kell lennie! <a href='career.php'>Vissza a regisztrációra</a>");
     }
-    if(strlen($_POST["jelszo"] < 8)){
+    if(strlen($_POST["jelszo"] ) < 8){
         die("<strong>HIBA: </strong> A jelszónak legalább 8 karakter hosszzúnak kell lennie! <a href='career.php'>Vissza a regisztrációra</a>");
     }
     if($_POST["jelszo"] !== $_POST["jelszoujra"]){
@@ -28,7 +28,7 @@ if(isset($_POST["reg"])){
             $kiterjesztesek = ["jpg", "png", "jpeg"];
             $kepkiterjesztes = strtolower(pathinfo($_FILES["kep"]["name"], PATHINFO_EXTENSION));
             if(in_array($kepkiterjesztes, $kiterjesztesek)){
-                if($_FILES["fajl"]["error"] === 0){
+                if($_FILES["kep"]["error"] === 0){
                     $cel = "profil/".$_POST["fnev"].".".$kepkiterjesztes;
                 } if (move_uploaded_file($_FILES["kep"]["tmp_name"], $cel)){
                     $uzenet.= "Sikeres fájlfeltöltés. ";
@@ -115,6 +115,7 @@ if(isset($_POST["reg"])){
                 <form method="post" action="career.php" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Regisztráció</legend>
+                            <h3>Regisztrációhoz megkell adni személyes adatokat és szakmai tapasztalatot is!</h3>
                             <label for="username">Felhasználó név:</label>
                             <input type="text" id="username" name="fnev" required>
                         <br>
@@ -174,14 +175,14 @@ if(isset($_POST["reg"])){
                             <label for="ang_mat">Angular material</label>
                             <br>
                             <label for="file">Önéletrajz csatolása:</label>
-                            <input type="file" id="file" name="fajl" required>
+                            <input type="file" id="file" name="fajl" >
                             <br>
                             <label for="kep">Profilkép csatolása:</label>
                             <input type="file" id="kep" name="kep" accept="image/*" >
                     </fieldset>
                     <input type="hidden" id="application_id" name="jelentkezes_id">
                     <input type="reset" value="Töröl">
-                    <input type="submit" value="Elküldöm a jelentkezésemet" name="reg">
+                    <input type="submit" value="Regisztrálok és elküldöm a jelentkezésemet" name="reg">
                 </form>
             </section>
         </main>

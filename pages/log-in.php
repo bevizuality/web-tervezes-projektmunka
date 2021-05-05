@@ -101,7 +101,7 @@ if (isset($_POST["ki"])){
                         <div>
                             <img src="profil/'. $_SESSION["user"]-> getKep(). '"alt="profilkep" width="200">
                             <p>Név: '.$_SESSION["user"]->getNev(). '</p>
-                            <p>Felhasználónév: '.$_SESSION["user"]->getNev(). ' </p>
+                            <p>Felhasználónév: '.$_SESSION["user"]->getFnev(). ' </p>
                             <p>Születési dátum: '.$_SESSION["user"]->getSzuldatum(). ' </p>
                             <p>Nem: '.$_SESSION["user"]->getNem(). ' </p>
                             <p>Telefon: '.$_SESSION["user"]->getTel(). ' </p>

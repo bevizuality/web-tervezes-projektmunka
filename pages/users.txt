@@ -1,0 +1,1 @@
+a:12:{s:3:"nev";s:8:"Por Cica";s:4:"fnev";s:5:"admin";s:6:"jelszo";s:8:"admin123";s:9:"szuldatum";s:10:"2021-04-14";s:3:"nem";s:3:"Nő";s:3:"tel";s:11:"06301234567";s:5:"email";s:18:"dust-cat@gmail.com";s:3:"edu";s:7:"Egyetem";s:12:"technologiak";s:3:"php";s:4:"fajl";s:5:"admin";s:3:"kep";s:9:"admin.jpg";s:18:"jelentkezes_datuma";s:9:"2021-5-05";}
